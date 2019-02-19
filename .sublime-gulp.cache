@@ -1,0 +1,1 @@
+{"C:\\xampp\\htdocs\\apartpl\\gulpfile.js":{"sha1":"4df8726a2b569ea2f2f1d473d084a49b9cf8ff32","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles scripts"},"styles":{"name":"styles","dependencies":""},"scripts":{"name":"scripts","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}

@@ -1,0 +1,424 @@
+@import bourbon
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+	.map-about
+		.map
+			width: 60%
+			background-size: contain
+			top: 10%
+			right: -2%
+			.map-item
+				width: 90px
+				height: 90px
+				background-size: cover
+	.reserve
+		.reserve-content-wrapper
+			width: 100%
+			margin-right: 0
+			.reserve-content 
+				width: 100%
+				text-align: right
+				.main-reserve-content
+					margin-left: 0
+					max-width: 570px
+					display: inline-block
+					text-align: right
+	.main-head
+		min-height: 700px
+		margin-bottom: 60px
+	.header-content
+		padding-bottom: 0px
+		.adaptive-item-top
+			visibility: visible
+			position: static
+	.item-top-numeric-wrapper
+		display: none
+	.flat
+		.flat-item
+			.main-content-flat
+				.img-flat
+					margin-right: 0px
+					float: none
+			.description-flat-item
+				float: right
+			.title-flat-item
+				margin-right: 0px
+
+	.flat
+		.flat-item:nth-child(odd)
+			.main-content-flat
+				.img-flat
+					margin-left: 0px
+					float: none
+			.title-flat-item
+				float: right
+				margin-right: 0px
+
+	.flat
+		.flat-item, .flat-item:nth-child(odd)
+			padding-left: 0px
+			padding-right: 0px
+			.top-line-flat
+				.title-flat-item
+					margin-left: 0px
+					float: none
+					display: inline-block
+			.main-content-flat
+				text-align: center
+				margin-bottom: 60px
+	.sidebar-flat
+		margin: 0 auto
+		display: inline-block
+		.item-sidebar-flat:last-child
+			margin-right: 0px
+		.item-sidebar-flat
+			display: inline-block
+			vertical-align: bottom 
+			margin-right: 50px
+		.button
+			float: none
+			margin-right: 0px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+	.map-container
+		border: none
+		.bottom-line, .top-line, .right-line
+			display: none
+	.phone
+		display: inline-block
+		text-align: right
+		font-size: 2.5em
+		vertical-align: middle
+	.logo
+		text-align: left
+		display: inline-block
+		vertical-align: middle
+
+
+	.flat
+		.flat-item
+			.description-flat-item
+				.title-flat-item
+					margin-right: 0px
+					float: left
+	.flat
+		.flat-item:nth-child(odd)
+			.title-flat-item
+				float: right
+				margin-right: 0px
+
+
+	.flat
+		.flat-item, .flat-item:nth-child(odd)
+			padding-left: 0px
+			text-align: right
+			&:after
+				height: 100%
+			.top-line-flat
+				text-align: left
+				.title-flat-item
+					font-size: 2em
+					margin-right: 0px
+					margin-left: 0px
+	.sidebar-flat
+		.item-sidebar-flat
+			display: inline-block
+			vertical-align: bottom 
+			margin-right: 15px
+		.item-sidebar-flat:last-child
+			margin-right: 0px
+		.button
+			display: inline-block
+			float: none
+			margin-left: 0px
+			margin-top: -20px
+
+	.reserve
+		background-position: bottom center
+		padding-bottom: 600px
+		background-size: 80%
+		.reserve-content-wrapper
+			width: 100%
+			margin-right: 0
+			.reserve-content 
+				width: 100%
+				text-align: left
+				p
+					max-width: 100%
+				.main-reserve-content
+					margin-left: 0
+					max-width: 100%
+					text-align: left
+	.map-about
+		text-align: center
+		.map
+			position: relative
+			right: 0%
+			top: 0%
+			width: 80%
+			background-size: contain
+			margin-top: -80px
+			margin-bottom: -150px
+		.about
+			width: 100%
+			p
+				max-width: 100%
+			.title
+				text-align: center
+
+	.client
+		.title
+			margin-top: 40px
+			margin-bottom: 20px
+	.seo
+		.title
+			margin-top: 60px
+			margin-bottom: 20px
+	h1
+		font-size: 3em
+		line-height: 1.2em
+
+	.header-content 
+		.header-content-title 
+			.adaptive-item-top
+				margin-left: 50px
+			.a-item-top-numeric
+				padding-left: 10px
+				padding-right: 10px
+				p
+					position: relative
+					border-bottom: none
+					&:after
+						content: ""
+						position: absolute
+						width: 30% 
+						height: 3px
+						background-color: #a9d1f0
+						display: inline-block
+						left: 0%
+						top: 100%
+			.title-wrapper
+				margin-top: 50px
+				margin-bottom: 30px
+
+
+			
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-head
+		min-height: 500px
+	.reserve
+		.title
+			margin-top: 30px
+	.header-content 
+		.header-content-title 
+			.adaptive-item-top
+				margin-left: 0px
+			.equal
+				padding: 0px
+			.title-wrapper
+				margin-top: 50px
+				margin-bottom: 20px
+			.bg-content
+				margin-top: 0px
+				font-size: 1.2em
+			.a-item-top-numeric
+				font-size: 1.2em
+				line-height: normal
+				p
+					font-size: 1.2em
+					margin-bottom: 10px
+				b
+					font-size: 1.9em
+
+	.flat
+		.flat-item, .flat-item:nth-child(odd)
+			padding-left: 0px
+			text-align: center
+			padding-top: 10px
+			.description-flat-item
+				.about
+					font-size: 1.1em
+			.title-flat-item
+				font-size: 2em
+	.sidebar-flat
+		.item-sidebar-flat
+			display: inline-block
+			vertical-align: bottom 
+			margin-right: 15px
+			margin-bottom: 20px
+		.item-sidebar-flat:last-child
+			margin-right: 0px
+	.phone
+		font-size: 1.5em
+	.logo
+		svg
+			width: 90%
+			height: auto
+	h1
+		font-size: 2.6em
+		line-height: 1.2em
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.title
+		font-size: 2em
+	.flat
+		.flat-item, .flat-item:nth-child(odd)
+			margin-top: 40px
+			padding-right: 0px
+			.description-flat-item
+				float: none
+			.top-line-flat
+				text-align: center
+				.title-flat-item
+					float: none
+					font-size: 2em 
+
+	.infoblock 
+		margin-top: -30px
+		padding-bottom: 100px
+		background-size: 100%
+		background-position: bottom center
+		.infoblock-content 
+			p
+				font-size: 2em
+
+	h1
+		font-size: 1.7em
+		line-height: 1.5em
+
+	.header-content
+		.header-content-title
+			.equal
+				padding-right: 15px
+				padding-left: 15px
+			.adaptive-item-top
+				margin-left: 0px
+				display: inline-block
+			.title-wrapper
+				margin-top: 30px
+				margin-bottom: 25px
+			.bg-content
+				margin-top: 0px
+				font-size: 1em
+				padding: 6px 10px
+				letter-spacing: normal
+				margin-bottom: 40px
+			.a-item-top-numeric
+				font-size: 20px
+				text-align: left
+				p
+					font-size: 1em
+				b
+					font-size: 2em
+		.a-item-top-numeric
+			padding-left: 10px
+			padding-right: 10px
+	.phone
+		font-size: 1.2em
+		margin-top: 37px
+	.logo
+		margin-left: 10px
+		svg
+			width: 80%
+	.reserve
+		padding-bottom: 340px
+		background-size: 80%
+	.map-about
+		padding-bottom: 160px
+		.about
+			padding-bottom: 40px
+			text-align: left
+			margin-bottom: 20px
+			margin-top: -60px
+		.map
+			width: 80%
+			height: 200px
+			background-size: contain
+			top: 15%
+			right: -2%
+			.map-item
+				width: 40px
+				height: 40px
+				top: 0%
+				background-size: cover
+	.client 
+		.clients 
+			.item-clients 
+				max-width: 50%
+				min-width: 0px
+				img
+					width: 50%
+					height: auto
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.phone
+		font-size: 1em
+		margin-top: 37px
+	.header-content
+		.header-content-title
+			.a-item-top-numeric
+				font-size: 18px
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

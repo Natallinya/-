@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+	
+	<!-- Header CSS (First Sections of Website: paste after release from _header.min.css here) -->
+	<style></style>
+	
+	<!-- Load Main CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+</head>
+
+<body>
+	<header class="main-head">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="mnu-line clearfix">
+
+					<div class="col-sm-6 col-md-6 col-xs-5">
+
+						<div class="logo"><img class="img-svg" src="img/logo.svg" alt="ApartPlus"></div>
+
+					</div>
+									
+								<div class="col-md-6 col-sm-6 col-xs-7">
+    <div class="phone">
+						<a href="tel:+7 (988) 47 47 999">+7 (988) 47 47 999</a>
+					</div>
+				</div>
+				</div>
+<div class="header-content clearfix"> 
+	<div class="header-content-title">
+	<div class="title-wrapper">
+ 	<h1>Арендуйте апартаменты посуточно в Майкопе</h1>
+ 	</div>
+ 	<p class="bg-content">На 50% дешевле чем в гостинице</p>
+
+ <div class="item-top-numeric-wrapper">
+ 		<div class="item-top-numeric item-top-numeric-left">
+ 			<div class="title-border">более
+ 			<p class="title-content"><span><b>3</b> лет</span><br></span>успешной работы</p>
+ 			</div>
+			</div>
+
+			<div class="item-top-numeric">
+						<div class="title-border">Все
+						<p class="title-content"><span>Официально</span><br>Отчётная документация</p>
+						</div>
+			</div>
+	 	
+ 		<div class="item-top-numeric item-bottom-numeric-left bottom-numeric">
+ 					<p class="title-content"><span><b>3</b> из <b>5</b></span><br><i>обращаются к нам по рекомендации</i></p>
+ 		</div>
+
+			<div class="item-top-numeric bottom-numeric">
+						<p class="title-content"><span><b>90 % </b></span><br>наших гостей возвращаются</p>
+			</div>
+</div>
+			<div class="row adaptive-item-top">
+
+
+					<div class="equal clearfix col-sm-3 col-md-3 col-xs-6">
+					<div class="a-item-top-numeric ">
+						<p> <b>3</b> из <b>5</b> </p>
+						обращаются к нам по рекомендации
+</div>
+					</div>
+						<div class="equal clearfix col-sm-3 col-md-3 col-xs-6">
+					<div class="a-item-top-numeric">
+					<p>  более  <b>3</b> лет</p>
+						успешной работы
+</div>
+					</div>
+<div class="equal clearfix col-sm-3 col-md-3 col-xs-6">
+					<div class="a-item-top-numeric">
+					<p> <b>90%</b> </p>
+						наших гостей возвращаются
+</div>
+					</div>
+					<div class="equal clearfix col-sm-3 col-md-3 col-xs-6">
+					<div class="a-item-top-numeric">
+					<p> <b>О</b>фициально</p>
+						отчетная документация
+</div>
+					</div>
+
+					</div>
+ </div>
+</div>
+
+
+
+	</header>
+
+	<section class="flat">
+		<div class="container">
+		<div class="title"><span>Снять</span> квартиру</div>
+			<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"><a href=""> Апартаменты №1 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">1-комнатная квартира</a></p>
+					<p class="adress">Ул. Чкалова 86-2 (4 этаж из 16)</p>
+				</div>
+			</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/1.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>1 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>2 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>4 гостя</p>
+						</div>
+</div>
+							<div class="cost"> 1 350 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+								<a class="button button-margin" href=""> Подробнее</a>
+
+
+				</div>
+			</div>
+</div>
+
+						<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"><a href=""> Апартаменты №2 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">1-комнатная квартира</a></p>
+					<p class="adress">Ул. Чкалова 65 (4 этаж из 16)</p>
+				</div>
+				</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/2.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>3 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>3 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>6 гостя</p>
+						</div></div>
+							<div class="cost"> 2 500 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+							
+								<a class="button button-margin" href="">Подробнее</a>
+
+				</div>
+			</div>
+		</div>
+
+						<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"><a href=""> Апартаменты №3 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">1-комнатная квартира</a></p>
+					<p class="adress">Ул. Чкалова 65 (4 этаж из 16)</p>
+				</div>
+				</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/3.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>1 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>2 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>4 гостя</p>
+						</div>
+</div>
+							<div class="cost"> 1 350 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+								<a href="" class="button button-margin"> Подробнее</a>
+				</div>
+			</div>
+		</div>
+
+								<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"> <a href="">Апартаменты №4 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">2-комнатная квартира</a></p>
+					<p class="adress">Ул. Чкалова 65 (4 этаж из 16)</p>
+				</div>
+				</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/4.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>2 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>2 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>4 гостя</p>
+						</div></div>
+
+							<div class="cost"> 2 500 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+
+								<a href="" class="button button-margin"> Подробнее</a>
+
+				</div>
+			</div>
+		</div>
+
+								<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"> <a href="">Апартаменты №5 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">1-комнатная квартира</a></p>
+					<p class="adress">Ул. Чкалова 65 (4 этаж из 16)</p>
+				</div>
+				</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/1.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>1 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>2 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>4 гостя</p>
+						</div></div>
+
+							<div class="cost"> 1 350 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+
+								<a href="" class="button button-margin"> Подробнее</a>
+						
+				</div>
+			</div>
+		</div>
+
+								<div class="flat-item clearfix">
+				<div class="top-line-flat">
+				<div class="title-flat-item title-flat"> <a href="">Апартаменты №6 </a></div>
+				<div class="description-flat-item">
+					<p class="about"><a href="">1-комнатная квартира</a></p>
+					<p class="adress">Ул. Карла Маркса (4 этаж из 16)</p>
+				</div>
+				</div>
+				<div class="main-content-flat clearfix">
+					<div class="img-flat"><a href=""><img src="img/apartments/6.png" alt="Квартиры в Майкопе"></a></div>
+					<div class="sidebar-flat">
+						<div class="item-sidebar-flat-wrapper">
+						<div class="item-sidebar-flat">
+							<div class="door"></div>
+      <p>3 спальня</p>
+						</div>
+							<div class="item-sidebar-flat">
+							<div class="bed"></div>
+      <p>3 кровати</p>
+						</div>
+						<div class="item-sidebar-flat">
+							<div class="quests"></div>
+      <p>6 гостя</p>
+						</div>
+</div>
+							<div class="cost"> 2 500 <i class="fa fa-rub" aria-hidden="true"></i>
+      <p>за 1 сутки</p>
+						</div>
+
+								<a href="" class="button button-margin"> Подробнее</a>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+		<section>
+		<div class="container reserve">
+		<div class="title">Порядок <span>бронирования </span><br> и проживания</div>
+		<div class=reserve-content-wrapper>
+		<div class="reserve-content clearfix">
+		<p>Для того, чтобы гарантировано заселиться в наши квартиры в нужный Вам день, их необходимо заранее забронировать. Процесс бронирования квартиры посуточно в Москве очень прост – выберите из каталога понравившуюся Вам квартиру и заполните заявку на бронирование или свяжитесь с нашей службой бронирования по телефону с 7.00 до 23.00 часов ежедневно по телефону</p>
+		<div class="main-reserve-content">Квартира считается забронированной после получения предоплаты в размере стоимости одних суток проживания. Возможные способы оплаты Вы найдете в разделе «Способы оплаты».</div>
+		<p>Обращаем Ваше внимание, что в случае отказа от заселения менее чем за 7 (семь) дней, переносе даты заезда или уменьшении продолжительности проживания, полученная предоплата не возвращается.</p>
+		<p>Если по каким либо причинам вы не готовы внести предоплату, у нас существует так называемая "мягкая бронь". Вы сообщаете менеджеру о своем желании заселиться в в выбранную вами квартиру на необходимый вам срок. Мы постараемся "придержать" для вас эту квартиру. Учтите, что если на выбранную вами квартиру появится другой желающий, и он готов будет забронировать ее внесением предоплаты, то в этом случае, мы заключим договор с ним. </p>
+		</div>
+		</div>
+		</div>
+		</section>
+		<section class="map-about">
+<div class="container map-container">
+		<div class="top-line"></div>
+			<div class="right-line"></div>
+			<div class="bottom-line"></div>
+<div class="about">
+	<div class="title"><span>О нас</span></div>
+	<p class="p">У нас как дома – прямой арендодатель жилья для посуточной аренды в Санкт-Петербурге. Компания имеет в собственности большой выбор квартир: клиенты Amigos Rent могут снять квартиру посуточно в Санкт-Петербурге в разных районах города и ценовых сегментах рыночного предложения, с разным количеством комнат и спальных мест, на сутки или несколько недель. Отсутствие посредников позволяет нам устанавливать демократичные тарифы на аренду жилья, чтобы краткосрочная аренда квартир в Санкт-Петербурге стала доступной самым широким слоям населения.
+	</p>
+	</div>
+<div class="map">
+	<div class="map-item" style="top: 14%; left: 30%; background-image: url(img/pins/pin1.png);"><a href="#"></a></div>
+	<div class="map-item" style="top: 32%; left: 16%; background-image: url(img/pins/pin2.png);"><a href="#"></a></div>
+	<div class="map-item" style="top: 30%; left: 27%; background-image: url(img/pins/pin3.png);"><a href="#"></a></div>
+	<div class="map-item" style="top: 45%; left: 23%; background-image: url(img/pins/pin4.png);"><a href="#"></a></div>
+	<div class="map-item" style="top: 40%; left: 36%; background-image: url(img/pins/pin5.png);"><a href="#"></a></div>
+	<div class="map-item" style="top: 33%; left: 56%; background-image: url(img/pins/pin6.png);"><a href="#"></a></div>
+
+</div> 
+</section>
+<section>
+		<div class="container client">
+		<div class="title">Мы гордимся своими<span>клиентами</span></div>
+
+<div class="clients">
+						<div class="item-clients"><img src="img/clients/1.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/2.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/3.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/4.png" alt="ApartPlus"></div>
+
+						<div class="item-clients"><img src="img/clients/5.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/6.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/7.png" alt="ApartPlus"></div>
+						<div class="item-clients"><img src="img/clients/8.png" alt="ApartPlus"></div>
+</div>
+					</div>
+		</section>
+
+<section class="seo">
+		<div class="container">
+		<div class="title">Хотите снять <span>жильё посуточно?</span></div>
+ <div class="row">
+ <div class="seo-block"> 
+<div class="col-sm-6 col-xs-12">
+    <p class="p">На сайте «У нас как дома» вы найдёте огромное количество интересных предложений по посуточной аренде жилья. В настоящее время здесь размещено более 75 тысяч объявлений от арендодателей из разных регионов России и других стран.</p>
+    <p class="p">Вы получаете информацию из первых рук — арендодатели самостоятельно размещают здесь объявления о сдаче жилья на короткий срок. Общайтесь с ними напрямую без посредников!</p>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+    <p class="p">Все объявления проходят предварительную проверку перед публикацией, что позволяет вам видеть только лучшие предложения по посуточной аренде квартир, комнат и коттеджей.</p>
+    <p class="p">Если вы уже снимали жильё посуточно на Суточно.ру, то оставьте о нём отзыв — это поможет в выборе жилья на короткий срок другим пользователям, вашим друзьям и знакомым.</p>
+					</div>
+
+					</div>
+					</div>
+		</section>
+		<section >
+		<div class="container infoblock">
+<div class="row">
+	<div class="infoblock-content">
+<div class="col-sm-8 col-xs-12">
+ <div class="title-line-info">
+ 	<span class="line-href"> Информация для гостя </span>
+ 	<a class="line-href" href="">Реквизиты</a>
+ </div>
+ <p>+7 (988) 47 47 999</p>
+ <div class="social">
+ 	<div class="social-item"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+ 	<div class="social-item"><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+ 	<div class="social-item"><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
+ 	 </div>
+ 	 <span>&copy;2017 У нас как дома.ру</span>
+ 	 <span class="p">Посуточная аренда жилья с гарантией заселения</p>
+</div>
+		</div>
+		</section>
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+	<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		loadCSS("css/header.min.css"); //Header Styles (compress & paste to header after release)
+		loadCSS("css/main.min.css");   //User Styles + Media Queries
+	</script>
+
+	<!-- Load Scripts -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</div>
+
+</body>
+</html>
